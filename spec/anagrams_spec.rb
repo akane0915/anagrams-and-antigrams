@@ -33,6 +33,18 @@ end
 
 describe('String#remove_spaces_and_punc') do
   it('takes input string and removes everything that is not a lower case letter') do
-    expect(("A. bd").remove_spaces_and_punc()).to(eq("You need to input actual words!"))
+    expect(("a.b2 d").remove_spaces_and_punc()).to(eq("abd"))
+  end
+end
+
+describe('String#anagrams?') do
+  it('takes two input strings and checks if they are anagrams') do
+    expect(("ruby").anagrams?("bury")).to(eq(true))
+  end
+end
+
+describe('String#anagrams?') do
+  it('takes two input strings and checks if they are anagrams') do
+    expect(("rub").anagrams?("bury")).to(eq(false))
   end
 end

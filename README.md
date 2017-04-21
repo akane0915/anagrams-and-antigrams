@@ -12,7 +12,7 @@ This is a web application that takes a string from the user and:
 
 2. Checks if the inputs are words by checking the word contains at least one vowel. If one of the inputs has no vowels, the app returns: "You need to input actual words!"
 
-3. Accounts for multiple words. Spaces and punctuation do not count, so they are removed (Note: This step permanently removes all spaces from each string.  This new string with no spaces or punctuation is passed into the method to determine if the two strings are anagrams).
+3. Accounts for multiple words. Spaces and punctuation do not count, so they are removed (Note: This step permanently removes all spaces from each string.  The new string with no spaces or punctuation is passed into the anagram method to determine if the two strings are anagrams).
 
 4. Determines if two words are anagrams. If they are, the app returns: "These words are anagrams."
 

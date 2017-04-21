@@ -23,14 +23,64 @@ class String
 
   define_method(:remove_spaces_and_punc) do
     user_input_string = self
-    no_spaces_or_punc_string = ""
-    if user_input_string.is_a_word?() == true
-      user_input_string = user_input_string.delete("/[.,\/#!$%\^&\*;:{}=\-_`~()]/s/g").delete("/\s{2,}/g").delete("[0-9]")
-    else #at least one word contains no vowels
-      user_input_string = "You need to input actual words!"
-    end #ends is_a_word if statement
-    user_input_string
+    no_spaces_or_punc_string = user_input_string.delete("/[.,\/#!$%\^&\*;:{}=\-_`~()]/s/g").delete("/\s{2,}/g").delete("[0-9]")
+  end
+
+  define_method(:anagrams?) do |user_input_two|
+    user_input_one = self
+    result = false
+    if user_input_one.chars().sort().join() == user_input_two.chars().sort().join()
+      result = true
+    end
+    result
   end
 
 
+
+  #
+  # define_method(:master_method) do |string_two|
+  #   string_one = self
+  #   result = ""
+  #   #is_a_word method
+  #   if string_one.is_a_word?() == false | string_two.is_a_word?() == false
+  #     result = "You need to input actual words!"
+  #   else #both strings are words
+  #     string_one = string_one.remove_spaces_and_punc()
+  #     string_two = string_two.remove_spaces_and_punc()
+  #   end
+  #   result
+  # end
+
+
+
 end #End class String
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  # define_method(:remove_spaces_and_punc) do
+  #   user_input_string = self
+  #   no_spaces_or_punc_string = ""
+  #   if user_input_string.is_a_word?() == true
+  #     user_input_string = user_input_string.delete("/[.,\/#!$%\^&\*;:{}=\-_`~()]/s/g").delete("/\s{2,}/g").delete("[0-9]")
+  #   else #at least one word contains no vowels
+  #     user_input_string = false
+  #   end #ends is_a_word if statement
+  #   user_input_string
+  # end
