@@ -87,37 +87,4 @@ class String
     end
     result
   end
-
-
-
 end #End class String
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  # define_method(:remove_spaces_and_punc) do
-  #   user_input_string = self
-  #   no_spaces_or_punc_string = ""
-  #   if user_input_string.is_a_word?() == true
-  #     user_input_string = user_input_string.delete("/[.,\/#!$%\^&\*;:{}=\-_`~()]/s/g").delete("/\s{2,}/g").delete("[0-9]")
-  #   else #at least one word contains no vowels
-  #     user_input_string = false
-  #   end #ends is_a_word if statement
-  #   user_input_string
-  # end
