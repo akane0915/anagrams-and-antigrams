@@ -26,13 +26,13 @@ describe('String#is_a_word?') do
 end
 
 describe('String#remove_spaces_and_punc') do
-  it('takes input string and removes everything that is not a lower case letter') do
+  it('takes input string and removes everything that is not a lower case letter (punctuation, numbers, spaces)') do
     expect(("a c.at").remove_spaces_and_punc()).to(eq("acat"))
   end
 end
 
 describe('String#remove_spaces_and_punc') do
-  it('takes input string and removes everything that is not a lower case letter') do
+  it('takes input string and removes everything that is not a lower case letter (punctuation, numbers, spaces)') do
     expect(("a.b2 d").remove_spaces_and_punc()).to(eq("abd"))
   end
 end
@@ -74,7 +74,7 @@ describe('String#antigrams?') do
 end
 
 describe('String#master_method') do
-  it('calls master_method to check if words contain a vowel') do
+  it('calls master_method to ensure all words contain a vowel') do
     expect(("Ab").master_method("Cb")).to(eq("You need to input actual words!"))
   end
 end
@@ -87,7 +87,7 @@ end
 
 describe('String#master_method') do
   it('calls master_method to check (given words are anagrams) if each word is a palindrome') do
-    expect(("Ha.nnah").master_method("nnahah")).to(eq("These words are anagrams and at least one word is a palindrome."))
+    expect(("Ha.nnah").master_method("an ahn2h")).to(eq("These words are anagrams and at least one word is a palindrome."))
   end
 end
 

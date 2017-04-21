@@ -2,7 +2,7 @@ class String
   define_method(:to_lower_case) do
     lower_case_string = self.downcase()
   end
-
+  #######################################
   define_method(:is_a_word?) do
     array_of_words = self.to_lower_case().split(" ")
     is_a_word_array = []
@@ -18,14 +18,14 @@ class String
       true
     else
       false
-    end #End unless statement
-  end #End method "is_a_word?"
-
+    end
+  end
+  #######################################
   define_method(:remove_spaces_and_punc) do
     user_input_string = self.to_lower_case()
     no_spaces_or_punc_string = user_input_string.delete("/[.,\/#!$%\^&\*;:{}=\-_`~()]/s/g").delete("/\s{2,}/g").delete("[0-9]")
   end
-
+  #######################################
   define_method(:anagrams?) do |string_two|
     string_one = self
     result = false
@@ -34,7 +34,7 @@ class String
     end
     result
   end
-
+  #######################################
   define_method(:palindrome?) do
     result = false
     if self == self.reverse()
@@ -42,7 +42,7 @@ class String
     end
     result
   end
-
+  #######################################
   define_method(:antigrams?) do |string_two|
     string_one_array = self.split("")
     string_two_array = string_two.split("")
@@ -54,7 +54,7 @@ class String
     end
     result
   end
-
+  #######################################
   define_method(:master_method) do |string_two|
     string_one = self
     result = ""
