@@ -29,7 +29,7 @@ This is a web application that takes a string from the user and:
 |The program takes the two strings and removes all spaces and punctuation (everything that is not a lower case letter).| "a b", "d.e" | input_one = "ab", input_two = "de" |
 |The program takes the two strings and checks if for every letter in input_one, there is a corresponding letter in input_two and no extra letters in input_two.  If so, the program returns: "These words are anagrams."| "ruby", "bury" | "These words are anagrams." |
 |If the words are anagrams, the program takes the two strings and checks if each word is a palindrome (read the same backwards and forwards).  If so, the program returns: "These words are anagrams and at least one word is a palindrome."| "hannah", "bury" | "These words are anagrams and at least one word is a palindrome." |
-|If the words are NOT anagrams, the program takes the two strings and checks if they are antigrams (if no letters match).  If so, the program returns: "These words are anagrams and at least one word is a palindrome."| "cat", "dog" | "These words have no letter matches and are antigrams." |
+|If the words are NOT anagrams, the program takes the two strings and checks if they are antigrams (if no letters match).  If so, the program returns: "These words have no letter matches and are antigrams."| "cat", "dog" | "These words have no letter matches and are antigrams." |
 
 
 ## Setup/Installation Requirements

@@ -60,3 +60,15 @@ describe('String#palindrome?') do
     expect(("abc").palindrome?()).to(eq(false))
   end
 end
+
+describe('String#antigrams?') do
+  it('takes two input strings and checks if they are antigrams') do
+    expect(("abc").antigrams?("def")).to(eq(true))
+  end
+end
+
+describe('String#antigrams?') do
+  it('takes two input strings and checks if they are antigrams') do
+    expect(("abc").antigrams?("defa")).to(eq(false))
+  end
+end

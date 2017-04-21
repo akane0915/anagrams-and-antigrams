@@ -26,10 +26,10 @@ class String
     no_spaces_or_punc_string = user_input_string.delete("/[.,\/#!$%\^&\*;:{}=\-_`~()]/s/g").delete("/\s{2,}/g").delete("[0-9]")
   end
 
-  define_method(:anagrams?) do |user_input_two|
-    user_input_one = self
+  define_method(:anagrams?) do |string_two|
+    string_one = self
     result = false
-    if user_input_one.chars().sort().join() == user_input_two.chars().sort().join()
+    if string_one.chars().sort().join() == string_two.chars().sort().join()
       result = true
     end
     result
@@ -39,6 +39,18 @@ class String
     result = false
     if self == self.reverse()
       result = true
+    end
+    result
+  end
+
+  define_method(:antigrams?) do |string_two|
+    string_one_array = self.split("")
+    string_two_array = string_two.split("")
+    result = true
+    string_one_array.each() do |letter|
+      if string_two_array.include?(letter)
+        result = false
+      end
     end
     result
   end
