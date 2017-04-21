@@ -22,7 +22,7 @@ class String
   end #End method "is_a_word?"
 
   define_method(:remove_spaces_and_punc) do
-    user_input_string = self
+    user_input_string = self.to_lower_case()
     no_spaces_or_punc_string = user_input_string.delete("/[.,\/#!$%\^&\*;:{}=\-_`~()]/s/g").delete("/\s{2,}/g").delete("[0-9]")
   end
 
