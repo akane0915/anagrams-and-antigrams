@@ -55,21 +55,27 @@ class String
     result
   end
 
-
-
-  #
-  # define_method(:master_method) do |string_two|
-  #   string_one = self
-  #   result = ""
-  #   #is_a_word method
-  #   if string_one.is_a_word?() == false | string_two.is_a_word?() == false
-  #     result = "You need to input actual words!"
-  #   else #both strings are words
-  #     string_one = string_one.remove_spaces_and_punc()
-  #     string_two = string_two.remove_spaces_and_punc()
-  #   end
-  #   result
-  # end
+  define_method(:master_method) do |string_two|
+    string_one = self
+    result = ""
+    #Check if strings are words
+    if string_one.is_a_word?() == false
+      result = "You need to input actual words!"
+    elsif string_two.is_a_word?() == false
+      result = "You need to input actual words!"
+    else #both strings are words
+      string_one = string_one.remove_spaces_and_punc()
+      string_two = string_two.remove_spaces_and_punc()
+      if string_one.anagrams?(string_two) == false
+        result = "These words are not anagrams."
+        # if #check for antigrams
+        # end
+      elsif string_one.anagrams?(string_two) == true
+        result = "These words are anagrams."
+      end
+    end
+    result
+  end
 
 
 

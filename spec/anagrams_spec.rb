@@ -72,3 +72,27 @@ describe('String#antigrams?') do
     expect(("abc").antigrams?("defa")).to(eq(false))
   end
 end
+
+describe('String#master_method') do
+  it('calls master_method to check if words contain a vowel') do
+    expect(("Ab").master_method("Cb")).to(eq("You need to input actual words!"))
+  end
+end
+
+describe('String#master_method') do
+  it('calls master_method to check if words are anagrams') do
+    expect(("E.at").master_method("Tea")).to(eq("These words are anagrams."))
+  end
+end
+
+describe('String#master_method') do
+  it('calls master_method to check (given words are anagrams) if each word is a palindrome') do
+    expect(("Ha.nnah").master_method()).to(eq("These words are anagrams and at least one word is a palindrome."))
+  end
+end
+
+describe('String#master_method') do
+  it('calls master_method to check (given words are not anagrams) if words are antigrams') do
+    expect(("Ha.n").master_method("Ber.")).to(eq("These words are not anagrams and have no letter matches so they are antigrams."))
+  end
+end
