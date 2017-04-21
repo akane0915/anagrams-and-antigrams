@@ -76,9 +76,7 @@ class String
       elsif string_one.anagrams?(string_two) == true
         result = "These words are anagrams."
         #Check if each string is a palindrome
-        if string_one.palindrome?() == true
-          result = "These words are anagrams and at least one word is a palindrome."
-        elsif string_two.palindrome?() == true
+        if string_one.palindrome?() == true || string_two.palindrome?() == true
           result = "These words are anagrams and at least one word is a palindrome."
         end
         result

@@ -1,6 +1,6 @@
 # _Anagrams and Antigrams_
 
-#### _A web application to allow users to input two strings and determine if the words are anagrams, antigrams, or palidromes. April 21, 2017_
+#### _A web application to allow users to input two strings and determine if the words are anagrams, antigrams, or palidromes. This application is currently deployed via Heroku and viewable at https://damp-bayou-63524.herokuapp.com/. April 21, 2017_
 
 #### By _**Asia Kane**_
 
@@ -34,7 +34,7 @@ This is a web application that takes a string from the user and:
 
 ## Setup/Installation Requirements
 
-* _View the project at _
+* _View the project at https://damp-bayou-63524.herokuapp.com/_
 * _Clone this repository_
 * _Open files in text editor of your choice_
 * _Make changes as desired_
