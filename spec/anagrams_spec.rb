@@ -48,3 +48,15 @@ describe('String#anagrams?') do
     expect(("rub").anagrams?("bury")).to(eq(false))
   end
 end
+
+describe('String#palindrome?') do
+  it('takes one input string and checks if it is a palindrome') do
+    expect(("hannah").palindrome?()).to(eq(true))
+  end
+end
+
+describe('String#palindrome?') do
+  it('takes one input string and checks if it is a palindrome') do
+    expect(("abc").palindrome?()).to(eq(false))
+  end
+end

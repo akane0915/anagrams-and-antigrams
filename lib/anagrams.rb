@@ -35,6 +35,14 @@ class String
     result
   end
 
+  define_method(:palindrome?) do
+    result = false
+    if self == self.reverse()
+      result = true
+    end
+    result
+  end
+
 
 
   #
