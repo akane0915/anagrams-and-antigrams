@@ -15,6 +15,24 @@ end
 
 describe('String#is_a_word?') do
   it('takes input string and determines if all words contain a vowel') do
-    expect(("bA").is_a_word?()).to(eq(true))
+    expect(("bAt").is_a_word?()).to(eq(true))
+  end
+end
+
+describe('String#is_a_word?') do
+  it('takes input string and determines if all words contain a vowel') do
+    expect(("a c.at").is_a_word?()).to(eq(true))
+  end
+end
+
+describe('String#remove_spaces_and_punc') do
+  it('takes input string and removes everything that is not a lower case letter') do
+    expect(("a c.at").remove_spaces_and_punc()).to(eq("acat"))
+  end
+end
+
+describe('String#remove_spaces_and_punc') do
+  it('takes input string and removes everything that is not a lower case letter') do
+    expect(("A. bd").remove_spaces_and_punc()).to(eq("You need to input actual words!"))
   end
 end
