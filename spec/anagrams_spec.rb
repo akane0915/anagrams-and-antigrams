@@ -87,7 +87,7 @@ end
 
 describe('String#master_method') do
   it('calls master_method to check (given words are anagrams) if each word is a palindrome') do
-    expect(("Ha.nnah").master_method()).to(eq("These words are anagrams and at least one word is a palindrome."))
+    expect(("Ha.nnah").master_method("nnahah")).to(eq("These words are anagrams and at least one word is a palindrome."))
   end
 end
 

@@ -66,13 +66,22 @@ class String
     else #both strings are words
       string_one = string_one.remove_spaces_and_punc()
       string_two = string_two.remove_spaces_and_punc()
+      #Check if strings are anagrams
       if string_one.anagrams?(string_two) == false
         result = "These words are not anagrams."
         # if #check for antigrams
         # end
       elsif string_one.anagrams?(string_two) == true
         result = "These words are anagrams."
+        #Check if each string is a palindrome
+        if string_one.palindrome?() == true
+          result = "These words are anagrams and at least one word is a palindrome."
+        elsif string_two.palindrome?() == true
+          result = "These words are anagrams and at least one word is a palindrome."
+        end
+        result
       end
+      result
     end
     result
   end
