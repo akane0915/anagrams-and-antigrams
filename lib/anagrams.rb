@@ -69,8 +69,10 @@ class String
       #Check if strings are anagrams
       if string_one.anagrams?(string_two) == false
         result = "These words are not anagrams."
-        # if #check for antigrams
-        # end
+        #Check if words are antigrams
+        if string_one.antigrams?(string_two) == true
+          result = "These words are not anagrams and have no letter matches so they are antigrams."
+        end
       elsif string_one.anagrams?(string_two) == true
         result = "These words are anagrams."
         #Check if each string is a palindrome
