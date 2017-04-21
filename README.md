@@ -1,6 +1,6 @@
 # _Anagrams and Antigrams_
 
-#### _A web application to allow users to input a string and get an output from the site indicating if the word is an anagram. April 21, 2017_
+#### _A web application to allow users to input two strings and determine if the words are anagrams, antigrams, or palidromes. April 21, 2017_
 
 #### By _**Asia Kane**_
 
@@ -34,7 +34,7 @@ This is a web application that takes a string from the user and:
 
 ## Setup/Installation Requirements
 
-* _View the project at akane0915.github.io/anagrams_and_antigrams_
+* _View the project at _
 * _Clone this repository_
 * _Open files in text editor of your choice_
 * _Make changes as desired_
@@ -48,7 +48,7 @@ _N/A_
 _I encourage you to update/make suggestions/refactor this code as you see fit. I am always open to improvement! Please contact Asia Kane at asialkane@gmail.com with questions._
 
 ## Technologies Used
-_Ruby, Sinatra, Capybara, HTML, CSS, Bootstrap, BDD_
+_Ruby, Sinatra, Capybara Integration Testing, rspec Gem, HTML, CSS, Bootstrap, BDD_
 
 ### License
 *This software is licensed under the MIT license*
